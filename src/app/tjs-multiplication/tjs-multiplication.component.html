@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-title>
+        Tom's Multiplication Component
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>
+                Number 1
+            </mat-label>
+            <input
+                matInput 
+                type="number"
+                [(ngModel)]="numberOne" 
+            />
+        </mat-form-field>
+        &nbsp; x &nbsp;
+        <mat-form-field>
+            <mat-label>
+                Number 2
+            </mat-label>
+            <input
+                matInput 
+                type="number" 
+                [(ngModel)]="numberTwo" 
+            />
+        </mat-form-field>
+        &nbsp;
+        <button
+            mat-mini-fab
+            (click)="multiply()"
+        >
+            =
+        </button>
+        &nbsp;
+        {{ total }}
+    </mat-card-content>
+</mat-card>
